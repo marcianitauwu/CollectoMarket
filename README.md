@@ -36,4 +36,13 @@
     └── product-detail.php  # Panel de Detalles del Producto
 
 ```
+## Paleta de colores
+- Azul Principal: #3498DB (Un azul vibrante y amigable para elementos principales y llamadas a la acción)
 
+- Gris Neutro: #ECF0F1 (Un gris claro para fondos y secciones de contenido, que proporciona un buen contraste)
+
+- Gris Oscuro (Texto): #34495E (Un gris oscuro para el texto principal, que es legible y sofisticado)
+
+- Verde Acento: #2ECC71 (Un verde brillante para indicar éxito, disponibilidad o elementos destacados)
+
+- Naranja Acento: #E67E22 (Un naranja cálido para alertas, ofertas especiales o elementos secundarios importantes)
