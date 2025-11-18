@@ -1,5 +1,6 @@
 # MarketFlow
 ## Estructura del proyecto
+```
 /marketflow-project
 │
 ├── /config             # Configuración de la base de datos
@@ -28,4 +29,6 @@
     ├── create-product.php  # Panel Nueva Publicación
     ├── chat.php            # Panel de Chat
     └── product-detail.php  # (Para la vista de un producto individual, si es necesaria)
+
+```
 
