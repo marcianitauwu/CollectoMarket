@@ -19,16 +19,21 @@
 │   ├── /css            # Estilos (si no usas Tailwind CDN)
 │   ├── /js             # Scripts
 │   ├── /uploads        # Fotos de productos
-│   └── index.php       # Podría ser un enrutador simple, o cada archivo .php se llama directamente
+│   ├── /assets         # Imágenes de placeholder, logos, etc.
+│   └── index.php       # Podría ser un enrutador simple, o redirigir
 │
-├── /panels             # ¡Aquí irán tus archivos .PHP de cada panel!
-    ├── login.php           # Panel Login
-    ├── register.php        # Panel Crear Cuenta
+├── /includes           # Aquí ponemos los archivos reutilizables (Header, Sidebar)
+│   ├── header.php      # Contiene la barra superior
+│   └── sidebar.php     # Contiene el menú lateral
+│
+├── /panels             # Aquí irán tus archivos .PHP de cada panel
+    ├── login.php           # Panel Login (sin header/sidebar completo, ya que es una página distinta)
+    ├── register.php        # Panel Crear Cuenta (sin header/sidebar completo)
     ├── catalog.php         # Panel Principal (Catálogo de productos)
     ├── my-products.php     # Panel Mis Publicaciones
     ├── create-product.php  # Panel Nueva Publicación
     ├── chat.php            # Panel de Chat
-    └── product-detail.php  # (Para la vista de un producto individual, si es necesaria)
+    └── product-detail.php  # Panel de Detalles del Producto
 
 ```
 
