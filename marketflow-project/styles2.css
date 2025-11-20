@@ -1,6 +1,6 @@
 :root {
     /* ==================================== */
-    /* 🎨 PALETA DE COLORES (AZUL/GRIS)         */
+    /*  PALETA DE COLORES (AZUL/GRIS)         */
     /* ==================================== */
     --color-principal: #3498DB;          /* Azul Principal (Elementos clave, Botones) */
     --color-secundario: #2ECC71;         /* Verde Acento (Éxito, Disponibilidad) */
@@ -9,7 +9,8 @@
 
     --color-fondo-claro: #ECF0F1;       /* Gris Neutro (Fondo general del panel) */
     --color-fondo-base: #FFFFFF;        /* Blanco Puro (Cajas de producto, Tarjetas) */
-    --color-fondo-oscuro: #858585;      /* Gris Oscuro (Texto principal, legible) */
+    --color-fondo-oscuro: #707070;      /* Gris Oscuro (Texto principal, legible) */
+    /* --color-fondo-oscuro: #34495E;      Gris Oscuro (Texto principal, legible) */
     
     --color-texto-oscuro: #34495E;      /* Gris Oscuro (Texto principal, legible) */
     --color-texto-secundario: #757575;  /* Gris Medio (para descripciones) */
@@ -22,13 +23,14 @@
     --tipografia-secundaria: 'Open Sans', sans-serif;
 
     --tipografia-mediana: 30px;
+    --tipografia-grande: 40px;
 
 
     /* ==================================== */
     /*  BORDES  */
     /* ==================================== */
     --borde-radio-small: 4px;
-    --borde-radio-medium: 8px;
+    --borde-radio-medium: 20px;
     --borde-radio-circle: 50%;
 
 }
@@ -40,17 +42,62 @@ aside{
     font-size: var(--tipografia-mediana);
     font-family: var(--tipografia-principal);
     margin: 0%;
-    
-
-}
-.flexColumna {
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+}
+*{
+
+    border: 1px solid red;
+}
+aside a{
+    text-decoration: none;
+    color: var(--color-texto-claro);
+}
+.flexColumna {
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
 
 }
 .listaSinEstilo{
     list-style: none;
+}
+header{
+    background-color: var(--color-fondo-claro);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.cajaPerfil ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+
+}
+.cajaPerfil{
+
+}
+.cajaLogo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+.cajaBarraBusqueda input{
+    color: var(--color-texto-secundario);
+    margin-right: 200px;
+    width: 400px;
+    height: 50px;
+    border-radius: var(--borde-radio-medium);
+    padding-left: 10px;
 }
 body{
     margin: 0;
