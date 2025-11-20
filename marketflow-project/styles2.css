@@ -22,7 +22,7 @@
     --tipografia-principal: 'Roboto', sans-serif;
     --tipografia-secundaria: 'Open Sans', sans-serif;
 
-    --tipografia-mediana: 30px;
+    --tipografia-mediana: 28px;
     --tipografia-grande: 40px;
 
 
@@ -49,10 +49,7 @@ aside{
     
     
 }
-*{
 
-    border: 1px solid red;
-}
 aside a{
     text-decoration: none;
     color: var(--color-texto-claro);
@@ -82,19 +79,23 @@ header{
     list-style: none;
 
 }
-.cajaPerfil{
+.cajaPerfil h3{
+    font-size: var(--tipografia-mediana);
+}
 
+.cajaLogo h2{
+    font-size: var(--tipografia-grande);
 }
 .cajaLogo{
     display: flex;
     align-items: center;
     gap: 20px;
-
+    
 }
 .cajaBarraBusqueda input{
     color: var(--color-texto-secundario);
     margin-right: 200px;
-    width: 400px;
+    width: 500px;
     height: 50px;
     border-radius: var(--borde-radio-medium);
     padding-left: 10px;
