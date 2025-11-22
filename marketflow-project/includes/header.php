@@ -15,5 +15,5 @@
         
         
     </div>
-    <a href="">Cerrar Sesion</a>
+    <a href="../functions/logout.php">Cerrar Sesion</a>
 </header>
