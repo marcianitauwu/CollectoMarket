@@ -1,8 +1,5 @@
 <?php
-session_start();
-if (!isset($_SESSION['nombre']) || !isset($_SESSION['correo']) || !isset($_SESSION['password']) ) { 
-    header("Location: login.php"); exit(); 
-}
+
 require_once 'config/db.php';
 require_once 'includes/header.php';
 
@@ -82,3 +79,4 @@ $result = $stmt->get_result();
 $stmt->close();
 require_once 'includes/footer.php';
 ?>
+
