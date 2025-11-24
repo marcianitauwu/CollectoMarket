@@ -1,5 +1,4 @@
 <?php
-
 require_once 'config/db.php';
 require_once 'includes/header.php';
 
@@ -42,7 +41,7 @@ $stmt->execute();
 $result = $stmt->get_result();
 ?>
 
-<h2>Catálogo de Coleccionables </h2>
+<h2>Catálogo de Coleccionables</h2>
 
 <form method="GET" action="index.php" class="filter-form">
     <input type="text" name="search" placeholder="Buscar por nombre..." value="<?php echo htmlspecialchars($_GET['search'] ?? ''); ?>">
@@ -66,7 +65,7 @@ $result = $stmt->get_result();
                     <h3><?php echo htmlspecialchars($item['name']); ?></h3>
                     <p>Tipo: <strong><?php echo htmlspecialchars(ucfirst($item['type'])); ?></strong></p>
                     <p>Precio Estimado: <strong>$<?php echo number_format($item['price_real'], 2); ?></strong></p>
-                    <a href="item.php?id=<?php echo $item['id']; ?>" class="btn">Ver Detalles (HU6)</a>
+                    <a href="item.php?id=<?php echo $item['id']; ?>" class="btn">Ver Detalles</a>
                 </div>
             </div>
         <?php endwhile; ?>
@@ -79,4 +78,3 @@ $result = $stmt->get_result();
 $stmt->close();
 require_once 'includes/footer.php';
 ?>
-

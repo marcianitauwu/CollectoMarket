@@ -1,8 +1,6 @@
 <?php
 session_start();
-if (!isset($_SESSION['nombre']) || !isset($_SESSION['correo']) || !isset($_SESSION['password']) ) { 
-    header("Location: login.php"); exit(); 
-}
+
 // Destruir todas las variables de sesión
 $_SESSION = array();
 
