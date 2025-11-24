@@ -1,0 +1,24 @@
+<?php
+session_start();
+if (!isset($_SESSION['nombre']) || !isset($_SESSION['correo']) || !isset($_SESSION['password']) ) { 
+    header("Location: login.php"); exit(); 
+}
+// Destruir todas las variables de sesión
+$_SESSION = array();
+
+// Si se desea destruir la cookie de sesión, se debe borrar también.
+if (ini_get("session.use_cookies")) {
+    $params = session_get_cookie_params();
+    setcookie(session_name(), '', time() - 42000,
+        $params["path"], $params["domain"],
+        $params["secure"], $params["httponly"]
+    );
+}
+
+// Finalmente, destruir la sesión.
+session_destroy();
+
+// Redirigir al catálogo
+header("Location: index.php");
+exit;
+?>
