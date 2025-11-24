@@ -1,5 +1,5 @@
 /* ========================================================== */
-/* VARIABLES GLOBALES Y PALETA DE COLORES MEJORADA */
+/* VARIABLES GLOBALES Y PALETA DE COLORES MEJORADA            */
 /* ========================================================== */
 :root {
     /* Paleta Principal (Más vibrante y limpia) */
@@ -20,7 +20,7 @@
 }
 
 /* ========================================================== */
-/* RESET Y ESTILOS GENERALES */
+/* RESET Y ESTILOS GENERALES                                  */
 /* ========================================================== */
 * {
     margin: 0;
@@ -62,7 +62,7 @@ a:hover {
 }
 
 /* ========================================================== */
-/* ENCABEZADO Y NAVEGACIÓN */
+/* ENCABEZADO Y NAVEGACIÓN                                    */
 /* ========================================================== */
 .header {
     background-color: var(--bg-card);
@@ -110,7 +110,7 @@ a:hover {
 }
 
 /* ========================================================== */
-/* PIE DE PÁGINA */
+/* PIE DE PÁGINA                                              */
 /* ========================================================== */
 .footer {
     text-align: center;
@@ -122,7 +122,7 @@ a:hover {
 }
 
 /* ========================================================== */
-/* FORMULARIOS (Login, Register, Publish) */
+/* FORMULARIOS (Login, Register, Publish)                     */
 /* ========================================================== */
 .form-container {
     max-width: 600px;
@@ -235,7 +235,7 @@ fieldset legend {
 
 
 /* ========================================================== */
-/* CATÁLOGO (index.php) */
+/* CATÁLOGO (index.php)                                       */
 /* ========================================================== */
 .filter-form {
     display: flex;
@@ -311,7 +311,7 @@ fieldset legend {
 }
 
 /* ========================================================== */
-/* DETALLES DEL ÍTEM (item.php) */
+/* DETALLES DEL ÍTEM (item.php)                               */
 /* ========================================================== */
 .item-details {
     background: var(--bg-card);
@@ -357,7 +357,7 @@ fieldset legend {
 }
 
 /* ========================================================== */
-/* CHAT (chat.php) */
+/* CHAT (chat.php)                                            */
 /* ========================================================== */
 .chat-window {
     border: 1px solid #ddd;
@@ -425,7 +425,7 @@ fieldset legend {
 }
 
 /* ========================================================== */
-/* RESPONSIVE BÁSICO */
+/* RESPONSIVE BÁSICO                                          */
 /* ========================================================== */
 @media (max-width: 992px) {
     .item-details > div {
