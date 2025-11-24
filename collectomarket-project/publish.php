@@ -1,4 +1,8 @@
 <?php
+session_start();
+if (!isset($_SESSION['nombre']) || !isset($_SESSION['correo']) || !isset($_SESSION['password']) ) { 
+    header("Location: login.php"); exit(); 
+}
 require_once 'includes/auth.php'; // Requiere que el usuario esté logueado
 require_once 'config/db.php';
 require_once 'includes/header.php';
